@@ -26,7 +26,7 @@
             bottom: -10px;
             left:50%;
             transform: translateX(-50%);
-            animation: animate 4s linear infinite;
+            animation: animate 4s ease-in-out infinite;
         }
         @keyframes animate{
             0%{ width:100px; }
@@ -110,7 +110,7 @@
             left: 0;
             border-radius: 10px;
             height: 100%;
-            background-color: rgba(0, 0, 0, .4);
+            background-color: rgba(0, 0, 0, );
             transition: .3s;
         }
         .pic:hover::before{
@@ -119,9 +119,9 @@
         }
 
         /* FILTERS */
-        #check1:checked ~ .container .photo-gallery .pic{
+        #check1:checked ~ .container .photo-gallery .pic:hover{
             opacity: 1;
-            transform: scale(1);
+            transform: scale(1.1);
             position: relative;
             transition: 0.5s;
         }
@@ -130,9 +130,9 @@
             transform: scale(0);
             position: absolute;
         }
-        #check2:checked ~ .container .photo-gallery .programme{
+        #check2:checked ~ .container .photo-gallery .programme:hover{
             opacity: 1;
-            transform: scale(1);
+            transform: scale(1.1);
             position: relative;
             transition: 0.5s;
         }
@@ -141,9 +141,9 @@
             transform: scale(0);
             position: absolute;
         }
-        #check3:checked ~ .container .photo-gallery .facilities{
+        #check3:checked ~ .container .photo-gallery .facilities:hover{
             opacity: 1;
-            transform: scale(1);
+            transform: scale(1.1);
             position: relative;
             transition: 0.5s;
         }
