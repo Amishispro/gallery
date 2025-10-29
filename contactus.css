@@ -1,0 +1,207 @@
+body{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.des{
+    font-family: poppins;
+   padding: 30px;
+}
+.email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #dee2e6;
+    position: relative;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
+    width: 320px
+}
+a{
+    color: Black;
+    text-decoration: none;
+}
+svg{
+    
+   height: 50px;
+   width: 50px;
+    
+}
+.email:hover svg{
+    transition: all 0.5s ease-out;
+    fill: red;
+}
+
+.call{
+    margin-top: 20px;
+     display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #dee2e6;
+    position: relative;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
+    width: 320px
+}
+.call:hover svg{
+    transition: all 0.5s ease-in-out;
+    fill: #52ED6D;
+}
+.soci{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.soci svg{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #dee2e6;
+}
+.soci svg:hover{
+    fill: var(--accent-color);
+}
+.email:before{
+    content: 'Gmail';
+    position: absolute;
+    opacity: 0;
+    rotate: -45deg;
+}
+.email:hover:before{
+    content: 'Email';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    transform:translateX(50px) translateY(-65px) rotate(45deg);
+    background-color: #ef233c;
+    color: #81b29a;
+    height:20px;
+    width: 75px;
+    transition: all 1s ease-in-out;
+    padding: 20px;
+    opacity: 1;
+    border-radius: 20px;
+   
+}
+
+.call:before{
+    content: 'Phone no.';
+    position: absolute;
+    opacity: 0;
+    rotate: -45deg;
+}
+
+.call:hover:before{
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    transform:translateX(50px) translateY(-65px) rotate(45deg);
+    background-color: #52ED6D;
+    color: #80ffdb;
+    height:20px;
+    width: 85px;
+    transition: all 1s ease-in-out;
+    padding: 20px;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.call svg::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 10px solid #52ED6D;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    
+}
+
+#fa::before{
+    content: 'Facebook';
+    position: absolute;
+    opacity: 0;
+    rotate: -45deg;
+}
+
+#fa:hover::before{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    transform:translateX(35px) translateY(-65px) rotate(45deg);
+    background-color: blue;
+    color: #80ffdb;
+    height:20px;
+    width: 85px;
+    transition: all 1s ease-in-out;
+    padding: 20px;
+    opacity: 1;
+    border-radius: 20px;
+
+}
+#twit::before{
+    content: 'Twitter';
+    position: absolute;
+    opacity: 0;
+    rotate: -45deg;
+}
+
+#twit:hover::before{
+    font-size: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    transform:translateX(30px) translateY(-65px) rotate(45deg);
+    background-color: #e5e5e5;
+    color: black;
+    height:20px;
+    width: 85px;
+    transition: all 1s ease-in-out;
+    padding: 20px;
+    opacity: 1;
+    border-radius: 20px;
+
+}
+
+.form{
+    font-family: poppins;
+    margin-top: 50px;
+    height: 75vh;
+    width: 30vw;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e5e5e5;
+    border-radius: 25px;
+    line-height: 30px;
+    padding-top: 100px;
+}
+input{
+    height: 10%;
+    width: 80%;
+    border-radius: 15px;
+    font-family: poppins;
+    border: 2px solid #52b788;
+    background-color: #fec5bb; 
+    outline: #52b788;
+
+}
